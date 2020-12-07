@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- include A-Frame obviously -->
+    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+    <!-- include ar.js for A-Frame -->
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs>
+        <a-marker preset="hiro">
+            <!-- getting created image which is incluse text in it and which has created using online tool-->
+            <a-image src="Project Name.png" position="2.2 1 1" scale="2.8 2.8 2.8" rotation="270 90 -90"></a-image>
+            <!-- getting 3D model and display-->
+            <a-entity position="0 1 1" rotation="270 90 -90" scale="1 1 1" gltf-model="scene.gltf"></a-entity>
+        </a-marker>
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+
+</html>
